@@ -1,0 +1,936 @@
+*{
+  font-family: "Inter", sans-serif !important;
+}
+
+.body{
+}
+
+/*common styles for all over the website*/
+.padding-100{
+  padding-right: 120px !important;
+  padding-left: 120px !important;
+}
+.padding-top-100{
+  padding-top: 100px !important;
+}
+.sub-section-title {
+  font-size: 28px !important; /* Adjust the size as needed */
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  color: #FF3300; 
+  margin-bottom: 1rem;
+}
+
+.sub-section-subtitle{
+  font-size: 26px !important; /* Adjust the size as needed */
+  text-transform: uppercase;
+  line-height: 140%;
+  color: #0A175C !important;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sub-section-text{
+  font-size: 17px !important;
+  text-transform: none;
+  text-align: justify;
+  color: #535353;
+  line-height: 28px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+/*common styles for all over the website*/
+
+.nav-item a{
+  font-size: 17px;
+  font-weight: 500 !important;
+  color: #0A175C !important;
+  margin: 7px 15px 0px 0px;
+}
+
+.nav-item a:hover{
+  color: #FF3300 !important;
+}
+
+.call-us a{
+  text-decoration: none;
+  color: #FF3300 !important;
+}
+
+.hero {
+  background: url('img/hero-img.png') no-repeat center center;
+  background-size: cover;
+  max-height: 900px;
+  height: 100vh;
+  color: #fff;
+}
+
+.hero-title {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 55px !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0A175C;
+}
+
+.hero-subtitle {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 2rem;
+  color: #535353;
+}
+
+/* navbar styles */
+.navbar-brand img{
+  margin-right: 30px;
+}
+.nav-contact{
+  margin-bottom: 0px !important;
+}
+.call-us{
+  margin-left: 5px;
+  margin-bottom: 0px;
+  display: inline;
+}
+
+.phone-number{
+  color:#FF3300
+}
+/* navbar styles */
+
+.hero-link {
+  width: 54px;       /* Diameter of the circle */
+  height: 54px;      /* Diameter of the circle */
+  border-radius: 50%; /* This creates the round shape */
+  /* Additional styles for centering content, if needed */
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #CECECE;
+  transition: 0.3s ease-in-out;
+  background-image: url(img/down-arrow-red.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-link:hover {
+  border-color: #FF3300;
+}
+
+
+#about{
+  padding: 30px 0px 50px;
+}
+
+.about-description{
+  margin: 50px 0px;
+}
+
+.about-description img{
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.values{
+  background-color: #0A175C;
+  background-image: url(img/values-bg.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%
+}
+
+.values-content{
+  padding: 80px 0px;
+}
+
+.values-area-title{
+  font-size: 26px !important; /* Adjust the size as needed */
+  text-transform: uppercase;
+  line-height: 140%;
+  color: #fff !important;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.value-card1{
+  background-color: #EDF6FF;
+  border-radius: 20px;
+  padding: 35px 30px;
+  transition: all ease-in-out 0.3s;
+}
+
+.value-card1:hover{
+  background-color: #FFF;
+}
+
+.value-card2{
+  background-color: #C2E1F8;
+  border-radius: 20px;
+  padding: 35px 30px;
+  transition: all ease-in-out 0.3s;
+}
+
+.value-card2:hover{
+  background-color: #FFF;
+}
+
+.value-card3{
+  background-color: #ffe6da;
+  border-radius: 20px;
+  padding: 35px 30px;
+  transition: all ease-in-out 0.3s;
+}
+
+.value-card3:hover{
+  background-color: #FFF;
+}
+
+
+.value-card-title{
+  font-size: 18px;
+  font-weight: 600;
+  color: #0A175C;
+  text-align: left;
+  margin-bottom: 15px;
+} 
+
+.value-card-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+  text-align: left;
+  margin-bottom: 0px !important
+}
+
+#services{
+  padding: 50px 0px;
+}
+
+.services-card {
+  position: relative; /* Added to position the pseudo-element absolutely within the card */
+  min-height: 375px;
+  border-radius: 22px;
+  background-color: #F7F7F8;
+  transition: 0.3s ease-in-out; /* This now applies to background-color, but not background-image */
+  overflow: hidden; /* Ensures the pseudo-element doesn't overflow the border radius */
+}
+
+.services-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/service_card_bg.svg);
+  background-color: #07244f;
+  background-size: cover; /* Cover the entire area of the pseudo-element */
+  background-repeat: no-repeat;
+  background-position: center; /* Keep the background image centered */
+  border-radius: 22px; /* Match the border radius of the card */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Start fully transparent */
+  z-index: 0; /* Ensures the content is above the background */
+}
+
+.services-card:hover::before {
+  opacity: 1; /* Fade in the background image */
+}
+
+.services-card-content {
+  padding: 40px;
+  position: relative; /* Ensure that content is above the pseudo-element */
+  z-index: 1;
+}
+
+.services-card-content svg path {
+  fill: #0A175C;
+  transition: fill 0.3s ease-in-out; /* Transition fill color */
+}
+
+.services-card:hover .services-card-content * {
+  color: #fff;
+  transition: color 0.3s ease-in-out; /* Ensure color transitions smoothly */
+  fill: #fff; /* This will not work for SVG if the fill is set inline within the SVG code */
+}
+
+.services-headline{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FF3300;
+  line-height: 32px;
+}
+
+.services-description{
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 400;
+  color: #535353;
+  line-height: 175%;
+}
+
+.rokkhi-intro img{
+  margin: 0 auto;
+}
+
+.section-subtitle{
+  font-size: 20px;
+  font-weight: 400;
+  color: #4d5359;
+  margin-bottom: 40px;
+}
+
+.about-rokkhi-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #FF3300;
+  margin-bottom: 10px;
+}
+
+.about-rokkhi p{
+  font-size: 16px;
+  color: #535353;
+  line-height: 30px;
+}
+
+.about-rokkhi-home{
+  min-height: 250px;
+}
+
+.about-rokkhi-home p{
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 28px;
+  color: #666666;
+}
+
+.rokkhi-logo-small{
+  height: 114px; 
+  width: auto;
+}
+
+.video-player-btn{
+  margin-bottom: 30px;
+  width: 200px;
+  color: #0A175C;
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  padding: 8px 0px;
+  border-radius: 8px;
+}
+
+.video-player-btn p{
+  font-size: 18px;
+  font-weight: 500;
+  color: #0A175C;
+  margin-left: 5px;
+  display: inline;
+}
+.video-player-btn svg path{
+  fill: #0A175C;
+}
+
+.video-player-btn:hover *{
+  cursor: pointer;
+  fill: #FF3300;
+  color: #FF3300;
+  -webkit-box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+  -moz-box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+  box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+
+}
+
+.modal-content {
+  min-height: 480px !important;
+}
+
+.modal-dialog{
+  margin-top: 100px !important;
+}
+
+.rokkhi-features{
+  margin-top: 20px;
+  color: #0A175C;
+}
+
+.rokkhi-home-demo img{
+  max-width: 100%;
+}
+
+.feature-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #0A175C;
+  margin: 20px 0px;
+}
+
+.feature{
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #0A175C;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(224,224,224,1);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(224,224,224,1);
+  box-shadow: -1px 2px 5px 0px rgba(224,224,224,1);;
+  margin: 0px 20px 20px 0px;
+  transition: ease-in-out 0.3s;
+}
+
+.feature:hover{
+  -webkit-box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+  -moz-box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+  box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+}
+
+.feature-phrase{
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  display: inline;
+}
+
+.awards{
+  background-color: #0A175C;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.awards-intro{
+  align-content: center;
+}
+
+.award-intro-content{
+  padding-top: 60px;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.award-section-headline{
+  color: #FFB526;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.award-section-description{
+  color: #F2F4F8;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.award-list{
+  align-content: center;
+  padding:  60px 0px;
+}
+
+.award-card {
+  display: flex;
+  align-items: center;
+  background-color: #876100; /* For browsers that do not support gradients */
+  background: linear-gradient(to right, #92701A, #2543AE);
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 90%; 
+  color: white;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.award-card:hover {
+  background-color: #6d5109; /* For browsers that do not support gradients */
+  background: linear-gradient(to right, #2543AE, #92701A);
+}
+
+.award-icon {
+  margin-right: 22px;
+}
+
+.award-icon img{
+  height: fit-content; 
+  width: auto;
+}
+
+.award-info {
+  text-align: left;
+}
+
+.award-year {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFB526;
+}
+
+.award-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 4px;
+  /* Add additional styles for title if needed */
+}
+
+.award-provider {
+  font-size: 14px;
+  color: #DBDDE3;
+  /* Add additional styles for subtitle if needed */
+}
+
+.media{
+  background-color: #FFFBF3;
+  background-image: url(img/hero-img.png);
+  border-radius: 0px 0px 30px 30px;
+}
+
+.media-intro{
+  align-content: center;
+  padding: 50px 0px;
+}
+
+.media-intro-content{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.media-section-headline{
+  color:#0A175C;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.media-item-area{
+  align-content: center;
+  padding: 50px 12px;
+}
+
+.media-item-content{
+  align-content: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.media-item {
+  margin-bottom: 20px; /* Space between items */
+}
+
+.media-icon {
+  font-size: 20px; /* Adjust the size as needed */
+  color: red; 
+  margin-right: 8px;
+}
+
+.media-headline {
+  font-size: 16px; /* Adjust the size as needed */
+  color: #212121; 
+  text-decoration: none; /* Removes underline from links */
+  position: relative;
+  /* display: inline-block; */
+  transition: ease-in-out 0.2s;
+}
+
+.media-headline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px; /* Adjust the thickness of the underline */
+  background: #FF3300; /* Underline color */
+  transition: 0.3s;
+  position: absolute;
+  bottom: -3px; /* Adjust the position of the underline */
+  left: 0;
+}
+
+.media-headline:hover::after {
+  width: 100%;
+}
+
+.media-headline:hover{
+  color: #FF3300;
+}
+
+.media-source {
+  color: #FF3300; /* Choose color that matches your design */
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 7px;
+}
+
+.project-card{
+  height: 500px;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f1f1e8;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.project-text{
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(to top, rgb(12 52 77 / 90%) 40%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  padding: 50px 20px 30px;
+  position: absolute;
+  transition:  ease-in-out 0.3s
+}
+
+
+.project-card:hover .project-text{
+  background-image: linear-gradient(to top, #07244f  40%, rgba(0, 0, 0, 0) 100%);
+}
+
+.project-tag{
+  font-size: 14px !important;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.project-title h2{
+  font-size: 20px;
+  line-height: 135%;
+  font-weight: 500;
+}
+
+.client-logo-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* or the maximum width of your content area */
+  margin: 0 auto; /* Center the container */
+}
+
+.client-logo{
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 1; /* Slightly dim the logos to improve focus on hover */
+  transition: transform .3s;  /* Smooth transition for opacity */
+}
+
+.client-logo:hover{
+  transform: scale(1.25);
+}
+
+.solution-partner-card{
+  background-color: #fff;
+  border: 1px solid #DBDDE3;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all ease-in-out .3s;
+}
+
+.solution-partner-card:hover{
+  -webkit-box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+  -moz-box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+  box-shadow: -4px 6px 35px -15px rgba(163,163,163,1);
+}
+
+.partner-logo{
+  max-width: fit-content; /* Adjust the size of the logo as needed */
+  margin: 4px 0px 20px 0px; /* Space below the logo */
+}
+
+.solution-partner-card p{
+  font-size: 16px;
+  text-align: justify;
+  line-height: 28px;
+  color: #535353; /* Paragraph color */
+}
+
+.tag-area{
+  overflow: hidden;
+  margin-top: 30px;
+
+}
+
+.tags-text{
+  font-size: 13px;
+  background-color: rgb(238 241 249 / 75%);
+  height: 22px;
+  width: fit-content;
+  color: #56575d;
+  padding: 1px 6px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  transition: ease-in-out 0.3s;
+}
+
+.tags-text:hover{
+  background-color: rgb(210 218 231 / 75%);
+  color: #56575d;
+  cursor: default;
+}
+
+.basis-area{
+  align-items: center;
+  margin-top: 50px;
+  min-height: 280px;
+  width: 100%;
+  background-image: url(img/basis-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #fff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  border: 1px solid #DBDDE3;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  /* flex-direction: column-reverse; */
+}
+
+.basis-text{
+  padding: 25px 25px 0px 25px;
+}
+
+.basis-text h2{
+  color: #0A175C; 
+  font-size: 30px; 
+  font-weight: 600;
+}
+
+.basis-text p{
+  text-align: justify;
+  color: #666666; 
+  font-size: 16px; 
+  line-height: 28px;
+}
+
+.basis-logo{
+  max-width: 70%;
+  height: auto;
+  margin: 40px 0px 40px 40px ;
+}
+
+.basis-bg{
+  min-height: 375px;
+}
+
+.featured-clients{
+  margin-bottom: 100px;
+}
+
+.google-map{
+  width: 100%;
+  height: 400px;
+}
+
+#contact-us{
+  margin-top: 100px;
+}
+
+.contact-details{
+  padding: 60px;
+}
+
+.contact-text{
+  color: #0A175C;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.contact-text h2{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 15px 0px 5px 0px;
+}
+
+.contact-number{
+  margin-bottom: 15px;
+}
+
+.contact-number img{
+  margin-right: 10px;
+}
+
+.contact-info ul{
+  margin-top: 20px !important;
+  padding: 0 !important;
+}
+.contact-info ul li{
+  font-size: 16px;
+  font-weight: 500;
+  color: #0A175C;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.contact-info ul li a{
+  font-size: 16px; /* Adjust the size as needed */
+  color: #0A175C; 
+  text-decoration: none; /* Removes underline from links */
+  position: relative;
+  display: inline-block; /* Required for positioning the pseudo-element */
+  transition: ease-in-out 0.2s;
+}
+
+.contact-info ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px; /* Adjust the thickness of the underline */
+  background: #FF3300; /* Underline color */
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -3px; /* Adjust the position of the underline */
+  left: 0;
+}
+
+.contact-info ul li a:hover::after {
+  width: 100%;
+}
+
+.contact-info ul li a:hover{
+  color: #FF3300;
+}
+
+.contact-info ul li :hover{
+  color: #212121;
+}
+
+.footer{
+  margin-top: 50px;
+}
+
+.footer-logo{
+  margin-bottom: 20px;
+}
+
+.footer p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 25px;
+  padding: 0px 35px 0px 0px;
+}
+
+.footer-content{
+  align-items: center;
+}
+
+.footer-content-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer h2{
+  font-size: 16px;
+  font-weight: 600;
+  color: #0A175C;
+}
+
+.social-media-links a img{
+  transition: transform .2s;
+}
+
+.social-media-links a img:hover{
+  transform: scale(1.15);
+}
+
+.footer-bg{
+  min-height: 300px;
+  margin-top: 100px;
+  background-color: #FFFBF3;
+  background-image: url(img/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 1px solid #E5E5E5;
+}
+
+.copyright p{
+  font-size: 12px;
+  color: #535353;
+  margin: 0px;
+}
+
+/* Custom responsive content sizes sizes */
+
+/* @media (max-height: 620px) {
+  .hero {
+    height: auto;
+  }
+} */
+
+@media (max-width: 932px) {
+  .hero-title {
+    font-size: 32px !important;
+  }
+
+  .about-description{
+    text-align: center !important;
+  }
+
+  .award-card{
+    max-width: 100% !important;
+  }
+
+  .award-intro-content{
+    width: 90% !important;
+    text-align: center !important;
+  }
+
+  .media-intro-content{
+    width: 90% !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 28px !important;
+  }
+  .hero-subtitle {
+    font-size:20px;
+  }
+
+  .navbar-collapse{
+    text-align: center;
+  }
+
+  .media-intro{
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .media-item-content{
+    width: 90%;
+  }
+
+  .media-item-area{
+    padding: 50px 12px 50px 12px!important;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px !important;
+    line-height: 175%;
+  }
+
+  .hero-subtitle {
+    font-size: 20px !important;
+  }
+
+  .navbar-nav{
+    border-bottom: 1px solid #dbdbdb !important;
+    padding-bottom: 15px;
+  }
+
+  .awards{
+    border-radius: 0px;
+  }
+}
+
+
